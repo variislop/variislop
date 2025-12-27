@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*
+.ovali{
+  display: flex;
+}*/
+
+.oval1 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+  filter: blur(45px) ;
+  transform: rotate(55deg);
+
+
+  position: absolute;
+  display: flex;
+  top: 50px;
+  left: -150px;
+  width: 1250px;
+  height: 80px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+.oval2 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+  filter: blur(55px) ;
+  transform: rotate(55deg);
+
+  position: absolute;
+  display: flex;
+
+  top: -10px;
+  left: 400px;
+  width: 400px;
+  height: 100px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+.oval3 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+  filter: blur(45px) ;
+  transform: rotate(55deg);
+
+  position: absolute;
+  display: flex;
+
+  top: -80px;
+  left: 720px;
+  width: 250px;
+  height: 100px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+.oval4 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 100%);
+
+  filter: blur(45px) ;
+  transform: rotate(55deg);
+
+  position: absolute;
+  display: flex;
+
+  top: -80px;
+  left: 870px;
+  width: 600px;
+  height: 100px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+.oval5 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.10) 100%);
+
+  filter: blur(45px) ;
+  transform: rotate(55deg);
+
+  position: absolute;
+  display: flex;
+  top: 250px;
+  left: 1100px;
+  width: 600px;
+  height: 100px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+.oval6 {
+  height: 50px;
+  width: 100px;
+  background: #000000;
+  background: linear-gradient(274deg,rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%);
+
+  filter: blur(45px) ;
+  transform: rotate(55deg);
+
+  position: absolute;
+  display: flex;
+  top: 100px;
+  left: -300px;
+  width: 1000px;
+  height: 320px;
+  border-radius: 60%;
+  z-index: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+/* Световые лучи 
+.light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ray {
+  position: absolute;
+  top: -50%;
+  width: 2px;
+  height: 200%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0));
+  animation: moveRay 8s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes moveRay {
+  0% { transform: translateY(-100%) rotate(var(--angle)); opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.4; }
+  100% { transform: translateY(100%) rotate(var(--angle)); opacity: 0; }
+}*/
+
+header {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  height: 84px; /* увеличено в 3 раза */
+}
+
+nav {
+  position: absolute;
+  top: 100px;
+  z-index: 1000;
+  display: flex;
+  gap: 13vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 8px white;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+}
+
+.center img {
+  width: 180px;
+  margin-top: 20px;
+  /* Сделано **очень слабое** свечение — почти незаметно, но чуть мягче */
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.08)) 
+          brightness(1.03);
+  /*transform: scale(1.0);*/
+  
+}
+
+.FlowerIMG:hover {
+  animation: hoverGrow 0.6s forwards ease-in-out;
+  /*transform: scale(1.2);*/
+}
+
+.FlowerIMG:not(:hover) {
+  /*transform: scale(1.2);*/
+  animation: hoverShrink 0.6s forwards ease-in-out;
+}
+
+.downloadIMG:hover {
+  animation: hoverGrowDOW 0.6s forwards ease-in-out;
+  /*transform: scale(1.2);*/
+}
+
+.downloadIMG:not(:hover) {
+  /*transform: scale(1.2);*/
+  animation: hoverShrinkDOW 0.6s forwards ease-in-out;
+}
+
+
+.text2 {
+  margin: 0;
+  margin-top: 40px; 
+
+  font-size: 20px;
+  letter-spacing: 17px;
+  font-weight: 1;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+    width: 560px;
+}
+
+.text {
+  margin: 0;
+  margin-top: 40px; 
+
+  font-size: 20px;
+  letter-spacing: 20px;
+  font-weight: 1;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fotter {
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+}
+
+.scrapped {
+  position: absolute;
+  top: 160px;
+  transform: translateX(-50%);
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.scrapped img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/*@keyframes smoothGlow {
+  0% {
+    opacity: 0.52;
+  }
+  25% {
+    opacity: 0.62;
+  }
+  50% {
+    opacity: 0.74;
+  }
+  75% {
+    opacity: 0.62;
+  }
+  100% {
+    opacity: 0.52;
+  }
+}
+
+.ovali h2 {
+  animation: smoothGlow 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* рассинхронизация для плавного "дыхания" света 
+.oval1 { animation-delay: 0s; }
+.oval2 { animation-delay: 0.8s; }
+.oval3 { animation-delay: 1.6s; }
+.oval4 { animation-delay: 2.4s; }
+.oval5 { animation-delay: 3.2s; }
+.oval6 { animation-delay: 4s; }*/
+
+
+
+@keyframes hoverGrow {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+    @keyframes hoverShrink {
+      0% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+@keyframes hoverGrowDOW {
+      0% {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+      100% {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+      }
+    }
+    @keyframes hoverShrinkDOW {
+      0% {
+        transform: scale(1.1);
+        filter: brightness(0.8);
+      }
+      100% {
+        transform: scale(1);
+        filter: brightness(1);
+      }
+    }
+
+
+    
+@media (max-width: 700px) {
+  .oval4{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  .oval5{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+  .oval3{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  .oval2{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  .oval1{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  .oval6{
+    height: 50px;
+    width: 100px;
+
+    position: absolute;
+    display: flex;
+    top: 100px;
+    left: -300px;
+    width: 740px;
+    height: 320px;
+    border-radius: 60%;
+    z-index: 0;
+
+    filter: blur(30px) ;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .oval4{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  .oval5{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+  .oval3{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  /*.oval2{
+    height: 0px;
+    width: 0px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }*/
+
+  .oval1{
+    height: 20px;
+    width: 70px;
+    background: #000000;
+    background: linear-gradient(274deg,rgba(255, 255, 255, 0.13) 50%, rgba(255, 255, 255, 0.45) 100%);
+
+    transform: rotate(55deg);
+  }
+
+  /*.oval6{
+    height: 50px;
+    width: 100px;
+
+    position: absolute;
+    display: flex;
+    top: 100px;
+    left: -300px;
+    width: 740px;
+    height: 320px;
+    border-radius: 60%;
+    z-index: 0;
+
+    filter: blur(30px) ;
+  }*/
+}
