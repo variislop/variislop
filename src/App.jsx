@@ -94,7 +94,7 @@ export default function LandingPage() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin-top: -120px;
+          transform: translateY(-60px);
         }
 
         h1 {
