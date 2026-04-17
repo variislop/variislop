@@ -37,7 +37,7 @@ export default function LandingPage() {
         .bg {
           position: absolute;
           inset: 0;
-          background-image: url('/DaisiesBlueSign.jpg');
+          background-image: url('/Daisies Blue Sign.jpg');
           background-size: cover;
           background-position: center;
           transform: scale(1.05);
